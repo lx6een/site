@@ -621,10 +621,6 @@ body {
     background-color: var(--color-bg);
   }
 
-  .header__actions .button {
-    display: none;
-  }
-
   .nav__list {
     flex-direction: column;
     align-items: flex-start;
