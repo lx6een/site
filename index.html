@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__bar">
+        <a class="logo" href="#">
+          <img class="logo__image" src="assets/logo.png" alt="" width="48" height="48">
+          <span class="logo__title">Dentics</span>
+        </a>
+        <button class="header__toggle" type="button" data-toggle="#header-menu" aria-expanded="false" aria-controls="header-menu" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+          <span class="header__toggle-line"></span>
+          <span class="header__toggle-line"></span>
+        </button>
+        <div class="header__actions" id="header-menu">
+          <nav class="nav" aria-label="Главное меню">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link is-active" href="#home">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#services">Services</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#features">Features</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#team">Team</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="button" href="#appointment">
+            <span class="button__label">Appoinment</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <div class="hero__text">
+          <h1 class="hero__title">We Provide High<br>Quality <span class="hero__mark">Dental</span> Services</h1>
+          <p class="hero__lead">Appropriately embrace transparent materials via turnkey niche markets.</p>
+        </div>
+        <div class="hero__actions">
+          <a class="button button--start" href="#start">
+            <span class="button__label">Get Started</span>
+          </a>
+          <a class="button button--more" href="#more">
+            <span class="button__label">Learn More</span>
+          </a>
+        </div>
+      </div>
+      <img class="hero__media" src="assets/Illustration.png" alt="Smiling patient" width="598" height="497">
+    </section>
+    <section class="quote" id="services">
+      <div class="quote__panel">
+        <div class="quote__text">
+          <p class="quote__title"><span class="quote__line">Always <span class="quote__mark">Lough</span></span><span class="quote__line">Whenever Its Possible</span></p>
+        </div>
+        <img class="quote__image" src="assets/Image.png" alt="Dentist with a medical kit" width="496" height="328">
+      </div>
+      <div class="offer">
+        <div class="offer__intro">
+          <p class="offer__lead">We also offer treatments that improve the appearance of your smile giving you the confidence boost you deserve. The process or our treatment below.</p>
+        </div>
+        <div class="offer__body">
+          <h2 class="offer__title">WHAT WE PROVIDE</h2>
+          <div class="offer__columns">
+            <ul class="offer__list">
+              <li class="service">
+                <img class="service__icon" src="assets/Shield.png" alt="" width="32" height="32">
+                <span class="service__name">Check ups</span>
+              </li>
+              <li class="service service--cosmetic">
+                <img class="service__icon" src="assets/Shield.png" alt="" width="32" height="32">
+                <span class="service__name">Cosmetic dentistry</span>
+              </li>
+              <li class="service service--ortho">
+                <img class="service__icon" src="assets/Shield.png" alt="" width="32" height="32">
+                <span class="service__name">Orthodontics</span>
+              </li>
+              <li class="service service--prevent">
+                <img class="service__icon" src="assets/Shield.png" alt="" width="32" height="32">
+                <span class="service__name">Preventative checks</span>
+              </li>
+            </ul>
+            <ul class="offer__list offer__list--right">
+              <li class="service service--emergency">
+                <img class="service__icon" src="assets/Shield.png" alt="" width="32" height="32">
+                <span class="service__name">Emergencies</span>
+              </li>
+              <li class="service service--implants">
+                <img class="service__icon" src="assets/Shield.png" alt="" width="32" height="32">
+                <span class="service__name">Dental implants</span>
+              </li>
+              <li class="service service--children">
+                <img class="service__icon" src="assets/Shield.png" alt="" width="32" height="32">
+                <span class="service__name">Children's dentistry</span>
+              </li>
+              <li class="service service--phone">
+                <img class="service__icon" src="assets/Shield.png" alt="" width="32" height="32">
+                <span class="service__name">Telephone consultations</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features" id="features">
+      <div class="features__head">
+        <h2 class="features__title"><span class="features__row">What Makes Us More</span><span class="features__row"><span class="features__mark">Special</span></span></h2>
+        <div class="features__aside">
+          <div class="features__label">
+            <p class="features__kicker">KEY <span class="features__accent">FEATURE</span></p>
+          </div>
+          <div class="features__rule">
+            <span class="features__rule-line"></span>
+          </div>
+        </div>
+      </div>
+      <div class="features__board">
+        <div class="features__cards">
+          <article class="features__card">
+            <img class="features__icon" src="assets/01.png" alt="" width="112" height="112">
+            <div class="features__copy">
+              <h3 class="features__name">Laser Technology</h3>
+              <p class="features__text">Worlds most advanced Diode Laser.<br>Your treatment experience will be<br>relaxing &amp; smooth.</p>
+            </div>
+          </article>
+          <article class="features__card">
+            <img class="features__icon" src="assets/02.png" alt="" width="112" height="112">
+            <div class="features__copy">
+              <h3 class="features__name">Painless Injection</h3>
+              <p class="features__text">Only dental clinic in New York, USA<br>utilising Painless Injection system. You<br>will be amazed!</p>
+            </div>
+          </article>
+          <article class="features__card">
+            <img class="features__icon" src="assets/03.png" alt="" width="112" height="112">
+            <div class="features__copy">
+              <h3 class="features__name">Dental Implant</h3>
+              <p class="features__text">30+ years of experience in Dental Implant<br>with specialist care. You will be able to<br>chew properly again!</p>
+            </div>
+          </article>
+        </div>
+        <div class="features__cards">
+          <article class="features__card">
+            <img class="features__icon" src="assets/04.png" alt="" width="112" height="112">
+            <div class="features__copy">
+              <h3 class="features__name">3D Dental Scanner</h3>
+              <p class="features__text">One of the world’s most advanced 3D<br>Dental Scanner with auto scanning only<br>one in New York!</p>
+            </div>
+          </article>
+          <article class="features__card">
+            <img class="features__icon" src="assets/05.png" alt="" width="112" height="112">
+            <div class="features__copy">
+              <h3 class="features__name">Digital Smile Design</h3>
+              <p class="features__text">We help to re-design your smile and<br>shape your teeth to create a customised<br>smile for your face!</p>
+            </div>
+          </article>
+          <article class="features__card">
+            <img class="features__icon" src="assets/06.png" alt="" width="112" height="112">
+            <div class="features__copy">
+              <h3 class="features__name">Crown and Bridge</h3>
+              <p class="features__text">Transform you blackish gum to pinkish<br>colour with painless, single appointment<br>Laser Gum Treatment</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="team" id="team">
+      <div class="team__head">
+        <h2 class="team__title"><span class="team__line">Meet Some of Our</span><span class="team__line"><span class="team__mark">Brains</span></span></h2>
+        <div class="team__aside">
+          <div class="team__label">
+            <p class="team__kicker">MEET OUR <span class="team__accent">DOCTORS</span></p>
+          </div>
+          <div class="team__rule">
+            <span class="team__rule-line"></span>
+          </div>
+        </div>
+      </div>
+      <div class="team__row">
+        <button class="team__arrow team__arrow--prev" type="button" aria-label="Назад">
+          <img class="team__arrow-icon" src="assets/Arrow Left.png" alt="" width="24" height="24">
+        </button>
+        <div class="team__track">
+          <article class="doctor">
+            <img class="doctor__photo" src="assets/doctor1.png" alt="" width="216" height="216">
+            <div class="doctor__body">
+              <div class="doctor__info">
+                <h3 class="doctor__name">Dr. Jeanette Hoff</h3>
+                <div class="doctor__meta">
+                  <p class="doctor__role">Orthodontic Treatment</p>
+                  <p class="doctor__note">Yale Medical School</p>
+                </div>
+              </div>
+              <a class="doctor__button" href="#appointment"><span class="doctor__button-label">Appoinment</span></a>
+            </div>
+          </article>
+          <article class="doctor">
+            <img class="doctor__photo" src="assets/doctor2.png" alt="" width="216" height="216">
+            <div class="doctor__body">
+              <div class="doctor__info">
+                <h3 class="doctor__name">Dr. David Ambrose</h3>
+                <div class="doctor__meta">
+                  <p class="doctor__role">Orthodontic Treatment</p>
+                  <p class="doctor__note">Harvard Medical School</p>
+                </div>
+              </div>
+              <a class="doctor__button" href="#appointment"><span class="doctor__button-label">Appoinment</span></a>
+            </div>
+          </article>
+          <article class="doctor">
+            <img class="doctor__photo" src="assets/doctor3.png" alt="" width="216" height="216">
+            <div class="doctor__body">
+              <div class="doctor__info">
+                <h3 class="doctor__name">Dr. Jenelia Breton</h3>
+                <div class="doctor__meta">
+                  <p class="doctor__role">Orthodontic Treatment</p>
+                  <p class="doctor__note">Oxford Medical School</p>
+                </div>
+              </div>
+              <a class="doctor__button" href="#appointment"><span class="doctor__button-label">Appoinment</span></a>
+            </div>
+          </article>
+          <article class="doctor">
+            <img class="doctor__photo" src="assets/doctor4.png" alt="" width="216" height="216">
+            <div class="doctor__body">
+              <div class="doctor__info">
+                <h3 class="doctor__name">Dr. Jagajeet Aurora</h3>
+                <div class="doctor__meta">
+                  <p class="doctor__role">Orthodontic Treatment</p>
+                  <p class="doctor__note">Harvard Medical School</p>
+                </div>
+              </div>
+              <a class="doctor__button" href="#appointment"><span class="doctor__button-label">Appoinment</span></a>
+            </div>
+          </article>
+        </div>
+        <button class="team__arrow team__arrow--next" type="button" aria-label="Вперёд">
+          <img class="team__arrow-icon" src="assets/Arrow Right.png" alt="" width="24" height="24">
+        </button>
+      </div>
+    </section>
+    <section class="appointment" id="appointment">
+      <div class="appointment__head">
+        <div class="appointment__aside">
+          <div class="appointment__label">
+            <p class="appointment__kicker">MAKE AN <span class="appointment__accent">APPOINMENT</span></p>
+          </div>
+          <div class="appointment__rule">
+            <span class="appointment__rule-line"></span>
+          </div>
+        </div>
+        <h2 class="appointment__title"><span class="appointment__line">Consult with our</span><span class="appointment__line"><span class="appointment__mark">Doctor</span></span></h2>
+      </div>
+      <div class="appointment__board">
+        <div class="appointment__media">
+          <div class="appointment__plate"></div>
+          <img class="appointment__photo" src="assets/chel.png" alt="" width="448" height="588">
+        </div>
+        <form class="appointment__form" action="#">
+          <div class="appointment__fields">
+            <div class="appointment__row">
+              <label class="appointment__field">
+                <span class="appointment__caption appointment__caption--name">Name</span>
+                <span class="appointment__control">
+                  <span class="appointment__value">
+                    <input class="appointment__input" type="text" placeholder="Full name">
+                  </span>
+                </span>
+              </label>
+              <label class="appointment__field">
+                <span class="appointment__caption appointment__caption--phone">Phone</span>
+                <span class="appointment__control">
+                  <span class="appointment__value">
+                    <span class="appointment__phone">
+                      <span class="appointment__code">
+                        <span class="appointment__code-text">+7</span>
+                        <img class="appointment__chevron" src="assets/chevron-down.png" alt="" width="20" height="20">
+                      </span>
+                      <input class="appointment__input appointment__input--phone" type="tel" placeholder="(555) 000-0000">
+                    </span>
+                  </span>
+                </span>
+              </label>
+            </div>
+            <div class="appointment__row">
+              <label class="appointment__field">
+                <span class="appointment__caption appointment__caption--date">Date</span>
+                <span class="appointment__control">
+                  <span class="appointment__value">
+                    <input class="appointment__input" type="text" placeholder="DD/MM/YYYY">
+                    <img class="appointment__icon" src="assets/Calender.png" alt="" width="24" height="24">
+                  </span>
+                </span>
+              </label>
+              <label class="appointment__field">
+                <span class="appointment__caption appointment__caption--doctor">Doctor</span>
+                <span class="appointment__control">
+                  <span class="appointment__value">
+                    <input class="appointment__input" type="text" placeholder="Ivan Ivanov">
+                    <img class="appointment__icon" src="assets/chevron-down.png" alt="" width="24" height="24">
+                  </span>
+                </span>
+              </label>
+            </div>
+            <label class="appointment__message">
+              <span class="appointment__caption appointment__caption--message">Message</span>
+              <span class="appointment__control appointment__control--message">
+                <textarea class="appointment__note" placeholder="Include a message..."></textarea>
+              </span>
+            </label>
+          </div>
+          <div class="appointment__submit">
+            <label class="appointment__agree">
+              <input class="appointment__checkbox" type="checkbox">
+              <span class="appointment__policy">You agree to our friendly privacy policy.</span>
+            </label>
+            <button class="appointment__confirm" type="submit">
+              <span class="appointment__confirm-label">Confirm Appoinment</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

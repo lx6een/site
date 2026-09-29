@@ -1,0 +1,108 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  width: min(100%, var(--header-width));
+  margin-inline: auto;
+  box-sizing: border-box;
+  height: 120px;
+  padding: var(--spacing-xl) var(--header-padding-x) 0;
+}
+
+.header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  min-height: 80px;
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media (min-width: 1489px) {
+  .header__bar {
+    gap: var(--header-gap);
+  }
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: var(--actions-gap);
+  width: 597px;
+  height: 56px;
+}
+
+.header__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--toggle-gap);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__toggle-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-text);
+  transition: transform 0.45s ease, opacity 0.45s ease;
+}
+
+.header__toggle.is-open .header__toggle-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.header__toggle.is-open .header__toggle-line:nth-child(2) {
+  opacity: 0;
+}
+
+.header__toggle.is-open .header__toggle-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 1100px) {
+  .header {
+    height: auto;
+    padding: var(--spacing-lg) var(--spacing-md) 0;
+    background-color: var(--color-bg);
+  }
+
+  .header__bar {
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    min-height: 72px;
+  }
+
+  .header__toggle {
+    display: flex;
+  }
+
+  .header__actions {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    gap: var(--spacing-lg);
+  }
+
+  .header__actions.is-open {
+    display: flex;
+    box-sizing: border-box;
+    padding: var(--spacing-md) 0 var(--spacing-lg);
+    background-color: var(--color-bg);
+  }
+
+  .header__actions .button {
+    display: none;
+  }
+}
